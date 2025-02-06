@@ -5,19 +5,19 @@
 #include <math.h>
 
 // Wi-Fi設定
-const char* ssid = "DK_LAN_Wi-Fi6_2.4Ghz";
-const char* password = "dai75684";
+const char* ssid = "your_wifi_ssid";
+const char* password = "your_wifi_password";
 
 // SORACOM API設定（パブリッシュ用）
 const char* publishEndpoint = "g.api.soracom.io";
 const int port = 443;
-const char* deviceID = "F4:12:FA:64:B3:9C";
+const char* deviceID = "your_device_id";
 
 // SORACOM 認証用設定
 // 認証サーバーのエンドポイント（パブリッシュ用とは異なる）
 const char* authEndpoint = "api.soracom.io";
-const char* authKeyId = "keyId-gAIKmLBySIFHUUSFhWRwgaiUKZFiHZOR";  // SORACOMのAuthKeyId
-const char* authKey   = "secret-A3K01dqcqpbtqnZ9Epds1ESqiaPJBWEXzJi0Q13vme4rU6eZvVGV2oJQV4HI52sy";      // SORACOMのAuthKey
+const char* authKeyId = "your_auth_key_id";  // SORACOMのAuthKeyId
+const char* authKey   = "your_auth_key";      // SORACOMのAuthKey
 
 // 認証で取得したAPIキーとトークン（自動更新）
 String apiKey = "";
@@ -335,5 +335,3 @@ unsigned int CRC16_2(unsigned char *buf, int len) {
   }
   return (crc << 8) | (crc >> 8); // バイト順を反転
 }
-
-
